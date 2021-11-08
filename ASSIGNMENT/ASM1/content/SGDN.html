@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASM 1</title>
+    <link rel="stylesheet" href="../layout.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.4/fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+              <ul id="nav">
+                    <li><a href="../index.html"><i class="fas fa-globe-asia"></i>Travel</a></li>
+                    <li>
+                        <a href="">
+                            Transport  <i class="fas fa-sort-down"></i> </a>
+                                <ul class="subnav">
+                                    <li><a href="Flights.html"><i class="fas fa-plane"></i> Flights</a></li>
+                                </ul>
+                    </li>
+                    <li>
+                        <a href=""> Accommodation <i class="fas fa-sort-down"></i></a>
+                                <ul class="subnav">
+                                    <li><a href=""><i class="fas fa-hotel"></i> Hotel</a></li>
+                                </ul>
+                    </li>
+                    <li>
+                        <a href="">My booking</a>
+                    </li>
+                </ul> 
+
+            <div class="login">
+                   <li><a href=""><i class="fas fa-sign-in-alt"></i>  Login</a></li>
+                   <li><a href=""><i class="fas fa-user-plus"></i>  Register</a></li>
+            </div>
+        </div>
+
+        <div class="tongslider">
+            <div class="banner">
+                    <div class="slider">
+                        <input type="radio" name="radio-button" id="radio1">
+                        <input type="radio" name="radio-button" id="radio2">
+                        <input type="radio" name="radio-button" id="radio3">
+                        <input type="radio" name="radio-button" id="radio4">
+                        <input type="radio" name="radio-button" id="radio5">
+                        <input type="radio" name="radio-button" id="radio6">
+    
+                        <div class="anh hinh1">
+                            <img src="../img/banner/SG.jpeg" alt="">
+                        </div>
+                        <div class="anh">
+                            <img src="../img/banner/HN.jpg" alt="">
+                        </div>
+                        <div class="anh">
+                            <img src="../img/banner/ĐL.jpg" alt="">
+                        </div>
+                        <div class="anh">
+                            <img src="../img/banner/ĐNang.jpg" alt="">
+                        </div>
+                        <div class="anh">
+                            <img src="../img/banner/Hue.jpg" alt="">
+                        </div>
+                        <div class="anh">
+                            <img src="../img/banner/HPhong.jpg" alt="">
+                        </div>
+    
+                        <div class="navigation-auto">
+                            <div class="autobutton1"></div>
+                            <div class="autobutton2"></div>
+                            <div class="autobutton3"></div>
+                            <div class="autobutton4"></div>
+                            <div class="autobutton5"></div>
+                            <div class="autobutton6"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="thucong">
+                        <label for="radio1" class="thucong1"></label>
+                        <label for="radio2" class="thucong1"></label>
+                        <label for="radio3" class="thucong1"></label>
+                        <label for="radio4" class="thucong1"></label>
+                        <label for="radio5" class="thucong1"></label>
+                        <label for="radio6" class="thucong1"></label>
+                    </div>
+            </div>
+        </div>
+    
+            <script type="text/javascript">
+                var counter = 1;
+                    setInterval(function(){
+                        document.getElementById('radio' + counter).checked = true;
+                        counter++;
+                        if(counter > 6){
+                            counter = 1;
+                        }
+                    },3000);
+            </script>
+
+        <div id="SGDN">
+                <div class="hinh">
+                    <img src="../img/texco.jpg" alt="" class="img">
+                </div>
+                <div class="hinh">
+                    <img src="../img/ĐàNang.jpg" alt="" class="img">
+                </div>
+         </div>
+                <div class="tieude">
+                    <div >
+                        <input class="tua" value="Sài Gòn ↔ Đà Nẵng" readonly >
+                    </div>
+            </div>
+        
+
+            <form id="form-group">           
+
+                <div class="thongtin">
+                    <label> Full name </label>
+                    <div id="profile">
+                        <input class="profile" type="text" placeholder="Vui lòng nhập họ tên"  tabindex="1">
+                    </div>
+                </div>
+                <div class="thongtin">
+                    <label> Phone number </label>
+                    <div id="profile">
+                        <input class="profile" type="text" placeholder="Vui lòng nhập SĐT"  tabindex="2">
+                    </div>
+                </div>
+    
+                <div class="people">
+                    <label> Guests and Rooms <main></main> </label>
+                    <div id="songuoi">
+                        <input class="songuoi" list="choice" placeholder="Chọn số lượng người">
+                        <datalist id="choice">
+                            <option value="1 Người lớn, 0 Trẻ em, 1 Phòng"></option>
+                            <option value="2 Người lớn, 0 Trẻ em, 1 Phòng"></option>
+                            <option value="2 Người lớn, 1 Trẻ em, 1 Phòng"></option>
+                            <option value="2 Người lớn, 2 Trẻ em, 1 Phòng"></option>
+                            <option value="2 Người lớn, 0 Trẻ em, 2 Phòng"></option>
+                            <option value="2 Người lớn, 1 Trẻ em, 2 Phòng"></option>
+                            <option value="2 Người lớn, 2 Trẻ em, 2 Phòng"></option>
+                        </datalist>
+                     </div>
+                </div>
+    
+                <div class="roomhotel">
+                            <label> Kind of Rooms </label>
+                            <div id="choiceroom">
+                                <input class="choiceroom" list="typeroom" placeholder="Tiêu chuẩn phòng">
+                                <datalist id="typeroom">
+                                    <option value="Standards"></option>
+                                    <option value="Luxury"></option>
+                                </datalist>
+                            </div>
+                </div>
+                 <div class="roomhotel">
+                            <label> Hotels <main></main> </label>
+                            <div id="choiceroom">
+                                <input class="choiceroom" list="typehotel" placeholder="Hotels mong muốn">
+                                <datalist id="typehotel">
+                                    <option value="Mường Thanh Hotel"></option>
+                                    <option value="Novotel Hotel"></option>
+                                    <option value="Vinpearl"></option>
+                                </datalist>
+                            </div>
+                </div>
+        
+            <div class="Trip">
+                <label> Duration <main></main> </label>
+                <div id="songay">
+                    <input class="songay" list="day" placeholder="Combo trip">
+                    <datalist id="day">
+                        <option value="3 Ngày 2 Đêm"></option>
+                        <option value="4 Ngày 3 Đêm"></option>
+                        <option value="5 Ngày 4 Đêm"></option>
+                        <option value="6 Ngày 5 Đêm"></option>
+                        <option value="7 Ngày 6 Đêm"></option>
+                    </datalist>
+                </div>
+            </div>
+        
+        
+        
+    
+               <div class="check-group">
+                   <div class="check-in-out">
+                        <label> Check - in</label>
+                        <div id="date">
+                            <input class="date" type="date">
+                        </div>
+                    </div>
+                    <div class="check-in-out">
+                        <label> Check - out</label>
+                        <div id="date">
+                            <input class="date" type="date">
+                        </div>
+                    </div>
+               </div>  
+               <div class="booking">
+                   <div id="datve">
+                       <ul>
+                           <li><a href="Flights.html"><i class="fas fa-calendar-check"></i> BOOKING</a></li>
+                       </ul>
+                   </div>
+               </div>
+            </form>
+         
+  
+        <div class="footer">
+            <div id="contact">
+                    <ul class="address">
+                        <h2>Follow us on</h2>
+                        <li><a href=""><i class="fab fa-facebook-square"></i>      Facebook</a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i>      Instagram</a></li>
+                        <li><a href=""><i class="fas fa-phone-alt"></i>    1900 1080</a></li>
+                    </ul>
+            </div>
+            <div id="contact">
+                <div class="bank">
+                    <h1>Payment Partners</h1>
+                    <div>
+                    <img src="../img/NHang/tech.jpg" alt="">
+                    <img src="../img/NHang/famili.jpg" alt="">
+                    </div>
+                    <div>
+                    <img src="../img/NHang/K.jpg" class="big1" alt="">
+                    <img src="../img/NHang/Vietcom.jpg" class="big" alt="">
+                    </div>
+                </div>
+            </div>  
+
+            <div id="contact">
+                <div class="airline">
+                    <h1>Airline Partners</h1>
+                    <div>
+                    <img src="../img/Máy bay/bamboo.jpg" alt="">
+                    <img src="../img/Máy bay/pacific.jpg" alt="">
+                    </div>
+                    <div>
+                    <img src="../img/Máy bay/vietjet.jpg" class="big1" alt="">
+                    <img src="../img/Máy bay/vnair.jpg" class="big" alt="">
+                    </div>
+                </div>
+            </div>  
+
+            <div id="contact">
+                <div class="hotel">
+                    <h1>Hotels Partners</h1>
+                    <div>
+                    <img src="../img/KS/MT.jpg" alt="">
+                    <img src="../img/KS/VIn.jpg" alt="">
+                    </div>
+                    <div>
+                    <img src="../img/KS/NVT.jpg" class="big1" alt="">
+                    </div>
+                </div>
+            </div> 
+
+        </div>
+    </div>
+</body>
+</html>

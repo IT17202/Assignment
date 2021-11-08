@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASM 1</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4/fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+              <ul id="nav">
+                    <li><a href=""><i class="fas fa-globe-asia"></i>Travel</a></li>
+                    <li>
+                        <a href="">
+                            Transport  <i class="fas fa-sort-down"></i> </a>
+                                <ul class="subnav">
+                                    <li><a href="./content/Flights.html"><i class="fas fa-plane"></i> Flights</a></li>
+                                </ul>
+                    </li>
+                    <li>
+                        <a href=""> Accommodation <i class="fas fa-sort-down"></i></a>
+                                <ul class="subnav">
+                                    <li><a href=""><i class="fas fa-hotel"></i> Hotel</a></li>
+                                </ul>
+                    </li>
+                    <li>
+                        <a href="">My booking</a>
+                    </li>
+                </ul> 
+
+            <div class="login">
+                   <li><a href=""><i class="fas fa-sign-in-alt"></i>  Login</a></li>
+                   <li><a href=""><i class="fas fa-user-plus"></i>  Register</a></li>
+            </div>
+        </div>
+        
+    <div class="tongslider">
+        <div class="banner">
+                <div class="slider">
+                    <input type="radio" name="radio-button" id="radio1">
+                    <input type="radio" name="radio-button" id="radio2">
+                    <input type="radio" name="radio-button" id="radio3">
+                    <input type="radio" name="radio-button" id="radio4">
+                    <input type="radio" name="radio-button" id="radio5">
+                    <input type="radio" name="radio-button" id="radio6">
+
+                    <div class="anh hinh1">
+                        <img src="./img/banner/SG.jpeg" alt="">
+                    </div>
+                    <div class="anh">
+                        <img src="./img/banner/HN.jpg" alt="">
+                    </div>
+                    <div class="anh">
+                        <img src="./img/banner/ĐL.jpg" alt="">
+                    </div>
+                    <div class="anh">
+                        <img src="./img/banner/ĐNang.jpg" alt="">
+                    </div>
+                    <div class="anh">
+                        <img src="./img/banner/Hue.jpg" alt="">
+                    </div>
+                    <div class="anh">
+                        <img src="./img/banner/HPhong.jpg" alt="">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="autobutton1"></div>
+                        <div class="autobutton2"></div>
+                        <div class="autobutton3"></div>
+                        <div class="autobutton4"></div>
+                        <div class="autobutton5"></div>
+                        <div class="autobutton6"></div>
+                    </div>
+                    
+                </div>
+                <div class="thucong">
+                    <label for="radio1" class="thucong1"></label>
+                    <label for="radio2" class="thucong1"></label>
+                    <label for="radio3" class="thucong1"></label>
+                    <label for="radio4" class="thucong1"></label>
+                    <label for="radio5" class="thucong1"></label>
+                    <label for="radio6" class="thucong1"></label>
+                </div>
+        </div>
+    </div>
+
+        <script type="text/javascript">
+            var counter = 1;
+                setInterval(function(){
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if(counter > 6){
+                        counter = 1;
+                    }
+                },3000);
+        </script>
+
+        <div class="tour">
+            <div class="tour-item">
+                    <div class="tour1">
+                        <ul class="name">
+                            <li><a href="./content/SGHN.html">Sài Gòn <i class="fas fa-exchange-alt"></i> Hà Nội</a></li>
+                        </ul>
+                            <img src="./img/img index/SGHN.jpg" alt="">
+                    </div>
+                    <div class="tour1">
+                        <ul class="name">
+                            <li><a href="./content/SGDN.html">Sài Gòn <i class="fas fa-exchange-alt"></i> Đà Nẵng</a></li>
+                        </ul>
+                            <img src="./img/img index/SGDN.jpg" alt="">
+                    </div>
+                    <div class="tour1">
+                        <ul class="name">
+                            <li><a href="./content/SGNT.html">Sài Gòn <i class="fas fa-exchange-alt"></i> Nha Trang</a></li>
+                        </ul>
+                            <img src="./img/img index/SGNT.jpg" alt="">
+                    </div>
+            </div>
+
+            <div class="tour-item">
+                    <div class="tour1">
+                        <ul class="name">
+                            <li><a href="./content/SGNT.html">Sài Gòn <i class="fas fa-exchange-alt"></i> Đà Lạt</a></li>
+                        </ul>
+                             <img src="./img/img index/SGDL.jpg" alt="">
+                    </div>
+                    <div class="tour1">
+                        <ul class="name">
+                            <li><a href="./content/SGHP.html">Sài Gòn <i class="fas fa-exchange-alt"></i> Hải Phòng</a></li>
+                        </ul>
+                            <img src="./img/img index/SGHP.jpg" alt="">
+                    </div>
+                    <div class="tour1">
+                        <ul class="name">
+                            <li><a href="./content/SGHue.html">Sài Gòn <i class="fas fa-exchange-alt"></i> Huế</a></li>
+                        </ul>
+                            <img src="./img/img index/SGH.jpg" alt="">
+                    </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div id="contact">
+                    <ul class="address">
+                        <h2>Follow us on</h2>
+                        <li><a href=""><i class="fab fa-facebook-square"></i>      Facebook</a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i>      Instagram</a></li>
+                        <li><a href=""><i class="fas fa-phone-alt"></i>    1900 1080</a></li>
+                    </ul>
+            </div>
+
+            <div id="contact">
+                <div class="bank">
+                    <h1>Payment Partners</h1>
+                    <div>
+                    <img src="./img/NHang/tech.jpg" alt="">
+                    <img src="./img/NHang/famili.jpg" alt="">
+                    </div>
+                    <div>
+                    <img src="./img/NHang/K.jpg" class="big1" alt="">
+                    <img src="./img/NHang/Vietcom.jpg" class="big" alt="">
+                    </div>
+                </div>
+            </div>  
+
+            <div id="contact">
+                <div class="airline">
+                    <h1>Airline Partners</h1>
+                    <div>
+                    <img src="./img/Máy bay/bamboo.jpg" alt="">
+                    <img src="./img/Máy bay/pacific.jpg" alt="">
+                    </div>
+                    <div>
+                    <img src="./img/Máy bay/vietjet.jpg" class="big1" alt="">
+                    <img src="./img/Máy bay/vnair.jpg" class="big" alt="">
+                    </div>
+                </div>
+            </div>  
+
+            <div id="contact">
+                <div class="hotel">
+                    <h1>Hotels Partners</h1>
+                    <div>
+                    <img src="./img/KS/MT.jpg" alt="">
+                    <img src="./img/KS/VIn.jpg" alt="">
+                    </div>
+                    <div>
+                    <img src="./img/KS/NVT.jpg" class="big1" alt="">
+                    </div>
+                </div>
+            </div>  
+
+        </div>
+    </div>
+</body>
+</html>

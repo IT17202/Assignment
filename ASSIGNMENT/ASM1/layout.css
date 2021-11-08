@@ -1,0 +1,688 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*header,menu*/
+.header{
+    height: 50px;
+    background-color:black;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#nav{
+    display: inline-block;
+}
+#nav > li{
+   display: inline-block ; 
+}
+#nav li{
+    position: relative;
+}
+#nav > li > a{
+    color: white;
+    text-transform:uppercase;
+}
+#nav li a{
+    text-decoration: none; 
+    line-height: 46px;
+    padding: 0px 24px;
+    font-size: large;
+    display: block;
+}
+#nav  li:hover .subnav{
+    display: block;
+    background-color: wheat;
+}
+#nav .subnav li:hover a{
+    text-decoration: underline;
+    color: red;
+    background-color: gray;
+}
+#nav > li:hover > a{
+    background-color: gray;
+}
+#nav .subnav{
+    display: none;
+    top: 100%;
+   position: absolute;
+   list-style-type: none;
+   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+#nav .subnav a{
+    color: black;
+    padding: 0 40px;
+    line-height: 38px;
+}
+
+/*Login*/
+.header .login{
+    float:  right;
+}
+.login  li{
+    display: inline-block;
+}
+.login li a{
+    color: white;
+    text-transform:uppercase;
+    text-decoration: none; 
+    line-height: 46px;
+    padding: 0px 24px;
+    font-size: large;
+    display: block;
+}
+.login li:hover a{
+    text-decoration: underline;
+    color: red;
+    background-color: gray;
+    cursor: pointer;
+}
+/*banner*/
+.tongslider{
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background:url('./img/banner/bg.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   align-items: center;
+}
+.banner{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slider{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slider input{
+    display: none;
+}
+
+.anh{
+    width: 20%;
+    transition: 2s;
+}
+.anh img{
+    width: 800px;
+    height: 500px;
+}
+.thucong{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.thucong1{
+ border: 2px solid aqua;
+ padding: 5px;
+ border-radius: 10px;
+ cursor: pointer;
+ transition: 1s;
+}
+
+.thucong1:not(:last-child){
+    margin-right: 40px;
+}
+.thucong1:hover{
+    background: aqua;
+}
+
+#radio1:checked ~ .hinh1{
+    margin-left: 0 ;
+}
+#radio2:checked ~ .hinh1{
+    margin-left: -20% ;
+}
+#radio3:checked ~ .hinh1{
+    margin-left: -40% ;
+}
+#radio4:checked ~ .hinh1{
+    margin-left: -60% ;
+}
+#radio5:checked ~ .hinh1{
+    margin-left: -80% ;
+}
+#radio6:checked ~ .hinh1{
+    margin-left: -100% ;
+}
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+.navigation-auto div{
+    border: 2px solid aqua;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto  div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .autobutton1{
+    background: aqua;
+}
+#radio2:checked ~ .navigation-auto .autobutton2{
+    background: aqua;
+}
+#radio3:checked ~ .navigation-auto .autobutton3{
+    background: aqua;
+}
+#radio4:checked ~ .navigation-auto .autobutton4{
+    background: aqua;
+}
+#radio5:checked ~ .navigation-auto .autobutton5{
+    background: aqua;
+}
+#radio6:checked ~ .navigation-auto .autobutton6{
+    background: aqua;
+}
+  
+
+/*Chọn tour*/
+.tour{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+.tour-item{
+    display: flex;
+    justify-content: space-evenly;
+}
+.tour .tour1 img{
+    width: 450px;
+    border-radius: 20px;
+}
+.tour .name{
+    font-size:  25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    list-style-type: none;
+}
+.name li a{
+    text-decoration: none;
+    color: black;
+}
+.name li:hover a{
+    text-decoration: underline;
+    color: red;
+}
+
+/* footer*/
+.footer{
+    width: 100%;
+    display: flex;
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+}
+ #contact{
+    color: white;
+    padding: 20px;
+}
+.footer .address{
+    font-size:  18px;
+    list-style-type: none;
+    padding: 10px 10px;
+    margin: 0px 20px;
+}
+#contact li {
+    padding: 10px;
+}
+#contact li a{
+    color: white;
+    text-decoration: none;
+}
+#contact li:hover a{
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.footer .bank{
+    padding: 10px 10px;
+    margin: 0px 20px;
+}
+.footer .bank img{
+    padding-top: 10px;
+    padding-right: 10px;
+    width: 200px;
+    flex-wrap: wrap;
+}
+
+.footer .airline{
+    padding: 10px 10px;
+    margin: 0px 20px;
+}
+.footer .airline img{
+    padding-top: 10px;
+    padding-right: 10px;
+    width: 200px;
+    flex-wrap: wrap;
+}
+
+.footer .hotel{
+    padding: 10px 10px;
+    margin: 0px 20px;
+}
+.footer .hotel img{
+    padding-top: 10px;
+    padding-right: 10px;
+    width: 200px;
+    flex-wrap: wrap;
+}
+
+
+
+
+/*Trang con*/
+#form-group{
+    padding: 32px;
+    clear: both;
+    width: 80%;
+    background-color: antiquewhite;
+    box-shadow: 0 0 15px rgb(97 96 96);
+    height: 640px;
+    margin-bottom: 32px;
+    position: relative;
+    left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+/*Tên*/
+#profile{
+    width: 100%;
+}
+.thongtin{
+    padding-right: 32px;
+    font-size: 30px;
+    width: 40%;
+}
+.thongtin label{
+    font-weight: bold;
+    color: rgb(78, 78, 78); 
+}
+.thongtin .profile{
+    border-radius: 10px ;
+    padding: 16px 25px;
+    font-size: 20px;
+    width: 100%;
+    font-weight: bold;
+    outline: 1px solid #02F2F2;
+    box-shadow: 0 0 10px grey;
+    border: none;
+}
+.thongtin #profile{
+    margin-top: 10px;
+}
+
+/* Người*/
+.people{
+    margin-right: 16px;
+    font-size: 30px;
+    width: 30%;
+    clear: both;
+}
+.people label{
+    font-weight: bold;
+    color: rgb(78, 78, 78);
+}
+.people .songuoi{
+    border-radius: 10px ;
+    padding: 16px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    outline: 1px solid #02F2F2;
+    border: none;
+    box-shadow: 0 0 10px grey;
+}
+.people #songuoi{
+    margin-top: 10px;
+}
+
+/* ROOM */
+.roomhotel{
+    font-size: 30px;
+    width: 30%;
+    margin-right: 16px;
+}
+.roomhotel label{
+    font-weight: bold;
+    color: rgb(78, 78, 78);
+}
+.roomhotel .choiceroom{
+    border-radius: 10px ;
+    padding: 16px 25px;
+    font-size: 20px;
+    width: 100%;
+    font-weight: bold;
+    outline: 1px solid #02F2F2;
+
+    box-shadow: 0 0 10px grey;
+    border: none;
+}
+.roomhotel #choiceroom{
+    padding-top: 10px;
+}
+
+/* Tour*/
+.Trip{
+    font-size: 30px;
+    width: 30%;
+    clear: both;
+    margin-right: 16px;
+}
+.Trip label{
+    font-weight: bold;
+    color: rgb(78, 78, 78);
+}
+.Trip .songay{
+    border-radius: 10px ;
+    padding: 16px 25px;
+    font-size: 20px;   
+    font-weight: bold;
+    width: 100%;
+    outline: 1px solid #02F2F2;
+
+
+    box-shadow: 0 0 10px grey;  
+    border: none;
+}
+.Trip #songay{
+    padding-top: 10px;
+    display: flex;
+    
+}
+
+/*date*/
+.check-group{
+    width: 66%;
+    display: flex;
+    clear: both;
+    padding-left: 18px;
+    color: rgb(78, 78, 78);
+}
+.check-in-out{
+    font-size: 30px;
+   font-weight: bold;
+    width: 24%;
+}
+.check-in-out .date{
+    border-radius: 10px ;
+    padding: 16px 25px;
+    font-size: 16.5px;   
+    box-shadow: 0 0 10px grey;
+    outline: 1px solid #02F2F2;
+    border: none;
+}
+.check-in-out #date{
+    margin-top: 10px;
+}
+
+/* book vé*/
+.booking {
+    font-size: 24px;
+    border-radius: 10px ;
+    width: 20%;
+    height: 60px;
+    box-shadow: 0 0 10px grey;
+    background-color: rgb(134, 134, 255);
+}
+.booking #datve{
+    padding: 10px 25px;
+    font-size: 20px;   
+    font-weight: bold;
+    margin: 10px 20px;
+    text-align: center;
+}
+#datve li{
+    list-style: none;
+}
+#datve li  a{
+    text-decoration: none;
+    color: rgb(65, 63, 63);
+}
+
+
+/* Chung 6 tour*/
+.tieude{
+   text-align: center;
+   padding:20px 30px ;
+  
+}
+.tua{
+    text-align: center;
+    font-size: 50px;
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: orangered;
+    color: white;
+}
+
+/*Hình SG-HN*/
+#SGHN{
+    display: flex;
+    justify-content: center;
+}
+#SGHN .img{
+    width: 600px;
+    padding: 30px 30px;
+    border-radius: 100px;
+}
+
+/*Hình SG-DL*/
+#SGDL{
+    display: flex;
+    justify-content: center;
+}
+#SGDL .img{
+    width: 600px;
+    padding: 30px 30px;
+    border-radius: 100px;
+}
+
+/*Hình SG-DN*/
+#SGDN{
+    display: flex;
+    justify-content: center;
+}
+#SGDN .img{
+    width: 600px;
+    padding: 30px 30px;
+    border-radius: 100px;
+}
+
+/*Hình SG-HP*/
+#SGHP{
+    display: flex;
+    justify-content: center;
+}
+#SGHP .img{
+    width: 600px;
+    padding: 30px 30px;
+    border-radius: 100px;
+}
+
+/*Hình SG-NT*/
+#SGNT{
+    display: flex;
+    justify-content: center;
+}
+#SGNT .img{
+    width: 600px;
+    padding: 30px 30px;
+    border-radius: 100px;
+}
+
+/*Hình SG-Hue*/
+#SGHue{
+    display: flex;
+    justify-content: center;
+}
+#SGHue .img{
+    width: 600px;
+    padding: 30px 30px;
+    border-radius: 100px;
+}
+
+
+/* Đặt vé may bay*/
+.nen{
+    background-color: rgb(168 164 164 / 10%);
+    padding: 32px 0;
+}
+#Flights{
+    background-color: white;
+    padding: 32px;
+    clear: both;
+    width: 80%;
+    box-shadow: 0 9px 46px 8px rgb(0 0 0 / 2%), 0 24px 38px 3px rgb(0 0 0 / 4%), 0 11px 15px -7px rgb(0 0 0 / 5%);
+    height: 400px;
+    position: relative;
+    left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+/* FROM - TO */
+.from-to{
+    font-size: 30px;
+    width: 30%;
+    margin-right: 16px;
+}
+.from-to label{
+    font-weight: bold;
+    color: rgb(78, 78, 78);
+    margin-left: 20px;
+}
+.from-to .diden{
+    border-radius: 10px ;
+    padding: 16px 25px;
+    font-size: 20px;
+    width: 100%;
+    font-weight: bold;
+    outline: 1px solid #02F2F2;
+    box-shadow: 0 0 10px grey;
+    border: none;
+}
+.from-to #diden{
+    padding-top: 10px;
+}
+
+/* Số lượng người*/
+.soluongghe{
+    margin-right: 16px;
+    font-size: 30px;
+    width: 30%;
+    clear: both;
+}
+.soluongghe label{
+    font-weight: bold;
+    color: rgb(78, 78, 78);
+    margin-left: 20px;
+}
+.soluongghe .somechair{
+    border-radius: 10px ;
+    padding: 16px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    outline: 1px solid #02F2F2;
+    border: none;
+    box-shadow: 0 0 10px grey;
+}
+.soluongghe #somechair{
+    margin-top: 10px;
+}
+
+
+/* Chọn ghế */
+.Seat{
+    font-size: 30px;
+    width: 30%;
+    clear: both;
+    margin-right: 16px;
+}
+.Seat label{
+    font-weight: bold;
+    color: rgb(78, 78, 78);
+    margin-left: 20px;
+}
+.Seat .loaighe{
+    border-radius: 10px ;
+    padding: 16px 25px;
+    font-size: 20px;   
+    font-weight: bold;
+    width: 100%;
+    outline: 1px solid #02F2F2;
+
+
+    box-shadow: 0 0 10px grey;  
+    border: none;
+}
+.Seat #loaighe{
+    padding-top: 10px;
+    display: flex;
+}
+
+/* Ngày đi về*/
+.ticket{
+    width: 66%;
+    display: flex;
+    clear: both;
+    padding-left: 55px;
+    color: rgb(78, 78, 78);
+}
+.ticket label{
+    margin-left: 20px;
+}
+.vedive{
+    font-size: 30px;
+   font-weight: bold;
+    width: 32%;
+}
+.vedive .ngaydive{
+    border-radius: 10px ;
+    padding: 16px 60px;
+    font-size: 16.5px;   
+    box-shadow: 0 0 10px grey;
+    outline: 1px solid #02F2F2;
+    border: none;
+    
+ }
+.vedive #ngaydive{
+    margin-top: 10px;
+}
+
+
+
+
+
+
